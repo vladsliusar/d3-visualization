@@ -1,0 +1,299 @@
+/* Stylesheet by Vlad Sliusar, 2018 */
+
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/*remove Chrome's blue highlight*/
+:focus {
+    outline: none !important;
+}
+
+.svg-container2 {
+  margin-top: -20px;
+    margin-bottom:-50px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.svg-content-responsive2 {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+}
+
+
+#container_title{
+  background-color: #343434;
+}
+
+.container-fluid{
+  background-color: #eef5f9; /*#f5fbf9, #eff1f2*/
+  width: 100%;
+  border-radius:2px;
+  border: solid thin white;
+}
+
+#cardMap{
+  background:none;
+  border:none;
+}
+
+#card{
+  background:none;
+  border:none;
+}
+
+#vizCard{
+  background:none;
+  border:none;
+}
+
+.map {
+    box-shadow: 0px 1px 15px 0px gray;
+    border-radius:300px;
+    margin: 25px;
+}
+
+.countries {
+    fill: white;
+    stroke: gray;
+    stroke-width: 0.4px;
+    stroke-linecap: round;
+    stroke-opacity: 1;
+}
+
+.gratLines {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.7;
+    stroke-dasharray: 1.5;
+}
+
+.gratBackground {
+  fill: #9ecae1;
+  box-shadow: 0px 2px 15px 0px #000;
+}
+
+/*.chart{
+  background-color: white;
+border: #2e2e2e;
+border-radius: 5px;
+box-shadow: 0px 2px 5px 0px #999;
+
+}
+*/
+
+#vizCardInfo{
+  background:none;
+  width: 500px;
+  height: 300px;
+  border: #2e2e2e;
+  border-radius: 5px;
+}
+
+.chartTitle {
+    font-family: lato;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.axis{
+  color: black;
+  background-color: black;
+}
+
+.axis path,
+  .axis line {
+     fill: none;
+     stroke: #848484;
+     stroke-width: 1px;
+     shape-rendering: crispEdges;
+ }
+
+.axis text {
+    font-family: lato;
+    font-size: 1em;
+    fill: #2e2e2e;
+}
+
+#attrCardInfo{
+  background-color: #fff;
+  width: 500px;
+  height: 150px;
+  background-color: #white;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left:4px;
+  box-shadow: 0px 2px 5px 0px lightgray;
+}
+
+.dropdown {
+  width: 22%;
+  display: inline-block;
+  position:absolute;
+  top: 50%;
+  left: 3.5%;
+  font-family: lato;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid #999;
+  box-shadow: 2px 2px 4px #;
+  border-color: white;
+  border-radius: 10px;
+  color: #2e2e2e;
+  background-color: #eef5f9;
+
+}
+
+option {
+    font-weight: normal;
+    color: #2e2e2e;
+    border-radius: 5px;
+    font-family: lato;
+    font-size: 15px;
+}
+
+h2{
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-top:25px;
+  color: black;
+}
+h6{
+  font-size: 12px;
+  margin-left: 40px;
+  opacity: 0.6;
+}
+
+h5{
+  margin-top: 7px;
+  margin-bottom: 0px;
+  font-family: lato;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+p{
+  margin-top: 50px;
+  margin-left: 25px;
+  font-size: 13px;
+	font-family: lato;
+  font-style: italic;
+
+}
+#secondParagraph{
+  margin-top: -10px;
+}
+
+p2{
+  font-size: 13px;
+  margin-top: 100px;
+	font-family: lato;
+}
+/*border line*/
+hr {
+  border-color: gra;
+  border-width: 1px;
+}
+
+#hrViz{
+  border-color: white;
+  border-width: 1.5px;
+  opacity:1;
+}
+
+.infolabel {
+    position: absolute;
+    height: 65px;
+    min-width: 100px;
+    color: black;
+    background-color: white;
+    border: solid thin white;
+    padding: 5px 10px;
+    top: -75px;
+    font-family: lato;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px lightgray;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.infolabel h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.labelname{
+  color: red;
+  font-size: 18px;
+  font-weight: regular;
+}
+
+
+
+
+
+
+
+
+
+/*Spinning Globe*/
+.water {
+  fill: #9ecae1;
+}
+
+.land {
+  fill: #A98B6F;
+  stroke: #FFF;
+  stroke-width: 0.3px;
+}
+
+.land:hover {
+  fill:#33CC33;
+  stroke-width: 1px;
+}
+
+.focused {
+  fill: #33CC33;
+}
+
+select {
+  position: absolute;
+  top: 20px;
+  left: 580px;
+  border: solid #ccc 1px;
+  padding: 3px;
+  box-shadow: inset 1px 1px 2px #ddd8dc;
+}
+
+.countryTooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  padding: 5px;
+  text-align: left;
+  border: solid #ccc 1px;
+  color: #666;
+  font-size: 14px;
+  font-family: sans-serif;
+}
