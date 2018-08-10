@@ -573,26 +573,27 @@
        //update labels
        if (expressed == attrArray[1]) {
        var labelAttribute = "<h1>" + "$"+ formatComma(attrVal) +
-       "</h1><b>" + expressed.replace(/_/g, " ") + "</b>";
+       "</h1><b>" + "per capita" + "</b>";
        } else if (expressed == attrArray[0]){
          var labelAttribute = "<h1>" + formatComma(attrVal) + "%" +
-         "</h1><b>" + "expenditure of GDP" + "</b>";
+         "</h1><b>" + "of GDP" + "</b>";
        } else if (expressed == attrArray[6]) {
          var labelAttribute = "<h1>" + formatComma(attrVal) +
-         "</h1><b>" + "researchers" + "</b>";
+         "</h1><b>" + "per million inhabitants" + "</b>";
        } else if (expressed == attrArray[2]){
          var labelAttribute = "<h1>" + "$"+ formatComma(attrVal) +
-         "</h1><b>" + expressed.replace(/_/g, " ") + "</b>";
+         "</h1><b>" + "per capita" + "</b>";
        } else if (expressed == attrArray[3]){
          var labelAttribute = "<h1>" + "$"+ formatComma(attrVal) +
-         "</h1><b>" + expressed.replace(/_/g, " ") + "</b>";
+         "</h1><b>" + "per capita" + "</b>";
        } else if (expressed == attrArray[4]){
          var labelAttribute = "<h1>" + "$"+ formatComma(attrVal) +
-         "</h1><b>" + expressed.replace(/_/g, " ") + "</b>";
+         "</h1><b>" + "per capita" + "</b>";
        } else if (expressed == attrArray[5]){
          var labelAttribute = "<h1>" + "$"+ formatComma(attrVal) +
-         "</h1><b>" + expressed.replace(/_/g, " ") + "</b>";
+         "</h1><b>" + "per capita" + "</b>";
        };
+       //"</h1><b>" + expressed.replace(/_/g, " ") + "</b>"
 
        //label for undefined object properties
        if ($.type(props.Expenditure_by_Business) === "undefined") {
