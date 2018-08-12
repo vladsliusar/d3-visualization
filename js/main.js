@@ -303,7 +303,7 @@
             .append("div")
             .append("select")
             .attr("class", "dropdown")
-            .style("font-size","0.9vw")
+            .style("font-size","0.85vw")
             .attr("preserveAspectRatio", "xMidYMid meet")
             .on("change", function(){
                 changeAttribute(this.value, csvData)
@@ -314,7 +314,7 @@
             .attr("class", "titleOption")
             .attr("disabled", "true")
             .text("Select Attribute")
-            .style("font-size","0.8vw");
+            .style("font-size","0.75vw");
 
         //add attribute name options
         var attrOptions = dropdown.selectAll("attrOptions")
