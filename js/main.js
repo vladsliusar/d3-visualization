@@ -303,7 +303,7 @@
             .append("div")
             .append("select")
             .attr("class", "dropdown")
-            .attr("viewBox", "0 0 100 25" )
+            .style("font-size","0.9vw")
             .attr("preserveAspectRatio", "xMidYMid meet")
             .on("change", function(){
                 changeAttribute(this.value, csvData)
@@ -313,13 +313,15 @@
         var titleOption = dropdown.append("option")
             .attr("class", "titleOption")
             .attr("disabled", "true")
-            .text("Select Attribute");
+            .text("Select Attribute")
+            .style("font-size","0.8vw");
 
         //add attribute name options
         var attrOptions = dropdown.selectAll("attrOptions")
             .data(attrArray)
             .enter()
             .append("option")
+            .attr("class", "attrOpt")
             .attr("value", function(d){ return d })
             .text(function(d){return d.replace(/_/g, " ")});
 
